@@ -1,5 +1,6 @@
 {
   "name": "app-v2-md",
+  "homepage": "https://sethblumer1.github.io/app-v2-md",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
