@@ -18,9 +18,10 @@ export default function Banner() {
   return (
     <>
       <Flex
-        w={'full'}
+        // w={'75vw'}
+        w={'100vw'}
         h={'60vh'}
-        backgroundImage={'url(https://i.ibb.co/Dw13KCt/scale-more-faded.png)'}
+        backgroundImage={'url(https://i.ibb.co/StVjfwJ/web-fruit-bg.jpg)'}
         backgroundSize={'cover'}
         backgroundPosition={'center center'}
       >
@@ -28,7 +29,7 @@ export default function Banner() {
           w={'full'}
           justify={'center'}
           px={useBreakpointValue({ base: 4, md: 8 })}
-          bgGradient={'linear(to-r, blackAlpha.600, transparent)'}
+          // bgGradient={'linear(to-r, blackAlpha.600, transparent)'}
         >
           <Stack maxW={'2xl'} align={'center'} spacing={6}>
             <Text

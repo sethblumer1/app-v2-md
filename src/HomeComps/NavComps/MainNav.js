@@ -47,10 +47,11 @@ function MainNav() {
       </HStack>
       <Button
         borderRadius={'8px'}
-        padding={0}
         bgColor={'transparent'}
         pr={8}
         _hover={{ bgColor: 'transparent' }}
+        _active={{ bgColor: 'transparent' }}
+        _focus={{ outline: 0 }}
       >
         <Image
           src="https://www.freeiconspng.com/uploads/spain-flag-icon-10.png"
