@@ -45,7 +45,13 @@ function MainNav() {
           <NavLink key={link}>{link}</NavLink>
         ))}
       </HStack>
-      <Button borderRadius={'8px'} padding={0} bgColor={'transparent'} pr={8}>
+      <Button
+        borderRadius={'8px'}
+        padding={0}
+        bgColor={'transparent'}
+        pr={8}
+        _hover={{ bgColor: 'transparent' }}
+      >
         <Image
           src="https://www.freeiconspng.com/uploads/spain-flag-icon-10.png"
           width={'25px'}
