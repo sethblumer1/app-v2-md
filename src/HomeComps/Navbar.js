@@ -63,7 +63,6 @@ export default function Navbar() {
           </Box>
         ) : null} */}
       </Box>
-
       <MainNav />
 
       <Box>

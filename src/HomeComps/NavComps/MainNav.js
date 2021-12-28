@@ -8,7 +8,10 @@ import {
   useDisclosure,
   Button,
   Image,
+  Flex,
+  Icon,
 } from '@chakra-ui/react';
+import { FaFacebookSquare, FaInstagram } from 'react-icons/fa';
 
 const NavLink = ({ children }) => (
   <Link
@@ -30,7 +33,21 @@ const NavLink = ({ children }) => (
 
 function MainNav() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const Links = ['HOME', 'MEET OUR DOCTORS', 'TIPS & TRICKS', 'BMI CALCULATOR'];
+  const Links = [
+    'HOME',
+    'MEET OUR DOCTORS',
+    'TIPS & TRICKS',
+    'BMI CALCULATOR',
+    <Flex justifyContent={'center'}>
+      <Icon as={FaFacebookSquare} mr={5} w={5} h={5} />
+      <Icon as={FaInstagram} mr={5} w={5} h={5} />
+      <Image
+        // src="https://www.freeiconspng.com/uploads/spain-flag-icon-10.png"
+        src="https://cdn.countryflags.com/thumbs/spain/flag-round-250.png"
+        width={'20px'}
+      />
+    </Flex>,
+  ];
 
   return (
     <HStack
@@ -38,26 +55,23 @@ function MainNav() {
       alignItems={'center'}
       justifyContent={'flex-end'}
       bgColor={'#003E5B'}
-      pr={3}
+      bgGradient="linear(to-t, #003e5b,#4E95A9)"
+      h={12}
+      pr={10}
     >
       <HStack as={'nav'} spacing={6} display={{ base: 'none', md: 'flex' }}>
         {Links.map(link => (
           <NavLink key={link}>{link}</NavLink>
         ))}
       </HStack>
-      <Button
+      {/* <Button
         borderRadius={'8px'}
         bgColor={'transparent'}
         pr={8}
         _hover={{ bgColor: 'transparent' }}
         _active={{ bgColor: 'transparent' }}
         _focus={{ outline: 0 }}
-      >
-        <Image
-          src="https://www.freeiconspng.com/uploads/spain-flag-icon-10.png"
-          width={'25px'}
-        />
-      </Button>
+      ></Button> */}
 
       {isOpen ? (
         <Box pb={4} display={{ md: 'none' }}>

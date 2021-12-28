@@ -19,11 +19,15 @@ export default function Banner() {
     <>
       <Flex
         // w={'75vw'}
-        w={'100vw'}
+        // w={'100vw'}
         h={'60vh'}
-        backgroundImage={'url(https://i.ibb.co/StVjfwJ/web-fruit-bg.jpg)'}
+        // backgroundImage={'url(https://i.ibb.co/StVjfwJ/web-fruit-bg.jpg)'}
+        // backgroundImage={
+        //   'url(https://i.ibb.co/W57ZP3z/web-bg-fruit-updated.jpg)'
+        // }
+        backgroundImage={'url(https://i.ibb.co/Sc1tDfh/Site-Background-5.jpg)'}
         backgroundSize={'cover'}
-        backgroundPosition={'center center'}
+        backgroundPosition={'50% 45%'}
       >
         <VStack
           w={'full'}
@@ -55,7 +59,7 @@ export default function Banner() {
         </VStack>
       </Flex>
 
-      <BlockFooter />
+      {/* <BlockFooter /> */}
 
       {/* <Flex bgColor={'#003E5B'} h={'26vh'} alignItems={'center'}>
         <FooterMain />
